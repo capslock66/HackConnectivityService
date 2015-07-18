@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- State -->
+
+    <TextView
+        android:id="@+id/hackStateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="Android 5.X Hack state" />
+
+    <TextView
+        android:id="@+id/hackStateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hackStateTitle"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="Undefined" />
+
+    <Button
+        android:id="@+id/butRefresh"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hackStateValue"
+        android:layout_marginLeft="20dp"
+        android:text="Refresh"
+        android:visibility="visible" />
+
+    <!-- Hack -->
+
+    <TextView
+        android:id="@+id/textViewHack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/butRefresh"
+        android:text="Hack" />
+
+    <Button
+        android:id="@+id/butActivateWifi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butRefresh"
+        android:layout_below="@+id/textViewHack"
+        android:text="Wifi" />
+
+    <Button
+        android:id="@+id/butActivateMobile"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butRefresh"
+        android:layout_below="@+id/butActivateWifi"
+        android:text="Mobile" />
+
+    <Button
+        android:id="@+id/butDesactivateHack"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butRefresh"
+        android:layout_below="@+id/butActivateMobile"
+        android:text="Desactivate" />
+
+
+    <!-- Traces -->
+
+    <TextView
+        android:id="@+id/textViewTraces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHack"
+        android:layout_below="@+id/butDesactivateHack"
+        android:text="Traces" />
+
+    <Button
+        android:id="@+id/butActivateTraces"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butRefresh"
+        android:layout_below="@+id/textViewTraces"
+        android:text="Activate" />
+
+    <Button
+        android:id="@+id/butDesactivateTraces"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butRefresh"
+        android:layout_below="@+id/butActivateTraces"
+        android:text="Desactivate" />
+
+
+</RelativeLayout>
